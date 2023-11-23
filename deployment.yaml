@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-dpl
+  namespace: prod
   labels:
     app: nginx
 spec:
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: mzain/argo:v1
         ports:
         - containerPort: 80
