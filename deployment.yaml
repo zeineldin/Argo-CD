@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: mzain/argo:v1
+        image: mzain/argo:v2
         ports:
         - containerPort: 80
