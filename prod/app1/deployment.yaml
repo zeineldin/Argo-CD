@@ -4,19 +4,19 @@ metadata:
   name: nginx-dpl
   namespace: prod
   labels:
-    app: nginx
+    app: app1
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: app1
   template:
     metadata:
       labels:
-        app: nginx
+        app: app1
     spec:
       containers:
-      - name: nginx
-        image: mzain/argo:v2
+      - name: app1
+        image: mzain/argo:v1
         ports:
         - containerPort: 80

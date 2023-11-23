@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/zeineldin/Argo-CD.git
     targetRevision: HEAD
-    #path: ./
+    path: prod/
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
